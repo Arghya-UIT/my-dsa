@@ -41,12 +41,12 @@ void inf2pos(char in[], char pos[])
 		if (isdigit(c))
 		{
 			pos[j++] = c;
-			i++;
-			// while (isdigit(c = in[i]))
-			// {
-			// 	pos[j++] = c;
-			// 	i++;
-			// }
+// 			i++;
+			while (isdigit(c = in[i]))
+			{
+				pos[j++] = c;
+				i++;
+			}
 			pos[j++] = ' ';
 		}
 		else if (isspace(c))
